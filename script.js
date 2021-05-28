@@ -1,6 +1,4 @@
 (function () {
-	
-	
 
     /* INIT PHASE */
 
@@ -164,7 +162,7 @@
         ctx.font = `${factor>smallScreen?150:100}% monospace`
         ctx.fillStyle = controls.color
         ctx.textAlign = "center"
-        ctx.fillText('Please select a station', ORIGIN.x, ORIGIN.y)
+        ctx.fillText('Please select a track or station', ORIGIN.x, ORIGIN.y)
 
     }
 
@@ -1348,3 +1346,18 @@
         }
     } //end CartesianCoord
 })("Visit me at sweaverD.com!");
+$(function() {
+  
+// Dropdown toggle
+$('.dropdown-toggle').click(function(){
+  $(this).next('.dropdown').toggle();
+});
+
+$(document).click(function(e) {
+  var target = e.target;
+  if (!$(target).is('.dropdown-toggle') && !$(target).parents().is('.dropdown-toggle')) {
+    $('.dropdown').hide();
+  }
+});
+
+});
